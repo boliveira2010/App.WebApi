@@ -289,7 +289,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -315,6 +317,16 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App.Data\App.Data.csproj">
+      <Project>{6e1a3451-c332-4619-9799-b1b1d063068b}</Project>
+      <Name>App.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\App.Service\App.Service.csproj">
+      <Project>{4f60376d-94be-43fe-a950-3e544cccada5}</Project>
+      <Name>App.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
